@@ -1,0 +1,121 @@
+/* General Styles */
+ @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+body {
+    background: linear-gradient(135deg, #f6f9fc 0%, #eef1f6 100%);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem;
+    background-color: #4b7bec;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #dfe6e9 !important;
+    transition: color 0.3s ease;
+}
+
+/* Dashboard Styles */
+.container {
+    max-width: 1000px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+}
+
+.card-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #4b7bec;
+    border-color: #4b7bec;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3867d6;
+    border-color: #3867d6;
+}
+
+.btn-secondary {
+    background-color: #a5b1c2;
+    border-color: #a5b1c2;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #778ca3;
+    border-color: #778ca3;
+}
+
+/* Profile Card Animations */
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s all ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
